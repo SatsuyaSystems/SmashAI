@@ -32,3 +32,9 @@ class Movement:
 
     def smashLeft(self):
         self.Wizard.send_keystrokes("{j}")
+
+    def attackA(self):
+        self.Wizard.send_keystrokes("{c}")
+
+    def attackB(self):
+        self.Wizard.send_keystrokes("{x}")

@@ -19,6 +19,6 @@ from movement import Movement
 m = Movement()
 m.setup(Wizard)
 while True:
-    m.shield(30)
-    time.sleep(1)
-
+    input()
+    m.goRight(3)
+    m.attackB()
