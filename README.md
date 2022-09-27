@@ -18,7 +18,8 @@ This project is used by the following companies:
 - [x] Find Yuzu Process and connect
 - [x] Collect Screenshots
 - [x] Keystoke Movement
-- [ ] Emulate Pro Controller
+- [ ] Emulate Pro Controller (For better movement in Yuzu)
 - [ ] Neural Network
 - [ ] Reinforcement Learning
 - [ ] Capture Card Compatibility
+- [ ] Emulate Pro Controller (To Control an real switch)
