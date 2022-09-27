@@ -15,6 +15,7 @@ This project is used by the following companies:
 
 ### Checklist
 
+- [x] Find Yuzu Process and connect
 - [x] Collect Screenshots
 - [x] Keystoke Movement
 - [ ] Emulate Pro Controller
