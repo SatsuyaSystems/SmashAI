@@ -13,3 +13,11 @@ This project is used by the following companies:
 - Nippelfrei Inc.
 - mrpfister Inc.
 
+### Checklist
+
+- [x] Collect Screenshots
+- [x] Keystoke Movement
+- [ ] Emulate Pro Controller
+- [ ] Neural Network
+- [ ] Reinforcement Learning
+- [ ] Capture Card Compatibility
