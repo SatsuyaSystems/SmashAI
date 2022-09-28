@@ -13,12 +13,35 @@ if pid == None:
     print("Cant find pid!")
     exit()
 
-app = pywinauto.Application(backend="win32").connect(process=pid)
-Wizard = app[yuzuVersion]
-from movement import Movement
-m = Movement()
-m.setup(Wizard)
+#app = pywinauto.Application(backend="win32").connect(process=pid)
+#Wizard = app[yuzuVersion]
+
+from movement import MovementVPAD
+import vgamepad as vg
+m = MovementVPAD()
+m.setup(vg)
+
+def test():
+    input("Press")
+    m.analogL(xf=1.0, yf=0.0)
+    input("2")
+    m.analogL(xf=-1.0, yf=0.0)
+    input("3")
+    m.analogL(xf=-0.0, yf=0.0)
+    input("4")
+    m.analogL(xf=1.0, yf=0.0)
+    m.bBtn()
+    time.sleep(0.2)
+    m.analogL(xf=0.0, yf=0.0)
+    input("p")
+    m.lBtn()
+    time.sleep(1)
+    m.zlBtn(value=1.0)
+    time.sleep(2)
+    m.zlBtn(value=0.0)
+
 while True:
-    input()
-    m.goRight(3)
-    m.attackB()
+    m.zlBtn(value=1.0)
+    time.sleep(0.5)
+    m.zlBtn(value=0.0)
+    time.sleep(0.5)
