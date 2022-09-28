@@ -82,7 +82,7 @@ class MovementVPAD:
         self.gamepad.update()
 
     def zlBtn(self, value):
-        self.gamepad.right_trigger_float(value_float=value)
+        self.gamepad.left_trigger_float(value_float=value)
         self.gamepad.update()
 
     def analogL(self, xf, yf):
