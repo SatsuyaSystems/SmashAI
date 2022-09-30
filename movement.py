@@ -53,10 +53,10 @@ class MovementVPAD:
         self.gamepad.release_button(button=self.vg.XUSB_BUTTON.XUSB_GAMEPAD_B)
         self.gamepad.update()
 
-    def bBtn(self):
+    def bBtn(self, hold=0.1):
         self.gamepad.press_button(button=self.vg.XUSB_BUTTON.XUSB_GAMEPAD_A)
         self.gamepad.update()
-        time.sleep(0.1)
+        time.sleep(hold)
         self.gamepad.release_button(button=self.vg.XUSB_BUTTON.XUSB_GAMEPAD_A)
         self.gamepad.update()
 

@@ -41,7 +41,4 @@ def test():
     m.zlBtn(value=0.0)
 
 while True:
-    m.zlBtn(value=1.0)
-    time.sleep(0.5)
-    m.zlBtn(value=0.0)
-    time.sleep(0.5)
+    test()
