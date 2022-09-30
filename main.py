@@ -41,4 +41,9 @@ def test():
     m.zlBtn(value=0.0)
 
 while True:
-    test()
+    input("s")
+    m.yBtn()
+    time.sleep(0.2)
+    m.analogR(xf=1.0, yf=0.0)
+    time.sleep(0.2)
+    m.analogR(xf=0.0, yf=0.0)

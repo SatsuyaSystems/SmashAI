@@ -1,3 +1,4 @@
+import numpy
 import torch
 import random
 import numpy as np
@@ -14,7 +15,9 @@ class Agent:
         self.game = Image().getImage()
 
     def get_state(self):
-        self.game.show()
+        read = numpy.asarray(self.game)
+        self.state = torch.tensor(read)
+        print(self.state)
 
     def get_action(self):
         pass
